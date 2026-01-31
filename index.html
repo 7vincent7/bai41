@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đoàn Thanh niên Cộng sản Hồ Chí Minh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #9face6);
+            min-height: 100vh;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .author {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        /* ===== MỤC LỚN ===== */
+        .main-btn {
+            width: 100%;
+            padding: 14px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+            background: #6c63ff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .main-content {
+            display: none;
+            padding: 15px;
+            border-left: 4px solid #6c63ff;
+            margin-bottom: 10px;
+        }
+
+        /* ===== MỤC NHỎ ===== */
+        .sub-btn {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border: none;
+            border-radius: 6px;
+            background: #f0f0f0;
+            cursor: pointer;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .sub-content {
+            display: none;
+            padding: 10px 15px;
+            margin-left: 15px;
+            border-left: 3px solid #ccc;
+        }
+
+        /* ===== MỤC RẤT NHỎ (CHI TIẾT) ===== */
+        .detail {
+            margin-top: 8px;
+            padding: 10px;
+            background: #fafafa;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>📚 Đoàn Thanh niên Cộng sản Hồ Chí Minh</h2>
+    <div class="author">Tác giả: <strong>2/ Nguyễn Đình Linh</strong></div>
+
+    <!-- ===== MỤC 1 ===== -->
+<button class="main-btn" onclick="toggle('main1')">▶ Mục 1: Vai trò của Nguyễn Ái Quốc đối với việc thành lập tổ chức Đoàn</button>
+<div id="main1" class="main-content">
+
+    <button class="sub-btn" onclick="toggle('sub1-1')">➤ Mục 1.1: Chuẩn bị về tư tưởng và đường lối cách mạng</button>
+    <div id="sub1-1" class="sub-content">
+        <div class="detail">
+            Nguyễn Ái Quốc là người đầu tiên truyền bá chủ nghĩa Mác – Lênin vào Việt Nam, từ đó đặt nền tảng tư tưởng cho phong trào thanh niên yêu nước phát triển theo khuynh hướng cách mạng vô sản.<br>
+            Người khẳng định thanh niên là lực lượng xung kích của cách mạng, cần được giác ngộ lý tưởng độc lập dân tộc gắn liền với chủ nghĩa xã hội.<br>
+            Những quan điểm này tạo cơ sở lý luận quan trọng cho việc hình thành một tổ chức thanh niên cách mạng có kỷ luật, mục tiêu và phương hướng rõ ràng.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub1-2')">➤ Mục 1.2: Thành lập Hội Việt Nam Cách mạng Thanh niên (1925)</button>
+    <div id="sub1-2" class="sub-content">
+        <div class="detail">
+            Tháng 6/1925 tại Quảng Châu (Trung Quốc), Nguyễn Ái Quốc sáng lập Hội Việt Nam Cách mạng Thanh niên nhằm tập hợp những thanh niên tiên tiến, đào tạo họ trở thành cán bộ cách mạng.<br>
+            Đây được xem là tổ chức tiền thân của Đoàn Thanh niên Cộng sản Hồ Chí Minh, đánh dấu bước chuyển từ phong trào yêu nước tự phát sang phong trào cách mạng có tổ chức.<br>
+            Hội đã trực tiếp chuẩn bị lực lượng trẻ cho sự ra đời của Đảng Cộng sản Việt Nam và các tổ chức thanh niên cộng sản sau này.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub1-3')">➤ Mục 1.3: Đào tạo và rèn luyện cán bộ trẻ</button>
+    <div id="sub1-3" class="sub-content">
+        <div class="detail">
+            Nguyễn Ái Quốc mở nhiều lớp huấn luyện chính trị, đào tạo thanh niên Việt Nam về lý luận cách mạng, phương pháp tổ chức quần chúng và tinh thần kỷ luật.<br>
+            Nhiều học viên sau này trở thành những lãnh đạo quan trọng của Đảng và phong trào thanh niên.<br>
+            Việc chú trọng đào tạo cán bộ cho thấy tầm nhìn chiến lược của Người trong việc xây dựng lực lượng kế cận cho cách mạng Việt Nam.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub1-4')">➤ Mục 1.4: Thống nhất các tổ chức cộng sản và định hướng phong trào thanh niên</button>
+    <div id="sub1-4" class="sub-content">
+        <div class="detail">
+            Nguyễn Ái Quốc đóng vai trò quyết định trong việc thống nhất các tổ chức cộng sản đầu năm 1930, tạo điều kiện để phong trào thanh niên hoạt động dưới sự lãnh đạo thống nhất của Đảng.<br>
+            Từ cơ sở đó, các tổ chức thanh niên cộng sản lần lượt được hình thành, tiến tới sự ra đời của tổ chức Đoàn vào năm 1931.<br>
+            Điều này bảo đảm phong trào thanh niên gắn bó chặt chẽ với mục tiêu cách mạng của dân tộc.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub1-5')">➤ Mục 1.5: Xác lập vai trò thanh niên trong sự nghiệp giải phóng dân tộc</button>
+    <div id="sub1-5" class="sub-content">
+        <div class="detail">
+            Nguyễn Ái Quốc luôn nhấn mạnh rằng muốn cứu nước và giải phóng dân tộc thì phải dựa vào sức trẻ.<br>
+            Người coi thanh niên là lực lượng chủ lực trong đấu tranh cách mạng, vừa là người kế tục sự nghiệp, vừa là nhân tố quyết định tương lai đất nước.<br>
+            Quan điểm này trở thành kim chỉ nam cho hoạt động của tổ chức Đoàn qua các thời kỳ.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub1-6')">➤ Mục 1.6: Gắn phong trào thanh niên Việt Nam với cách mạng thế giới</button>
+    <div id="sub1-6" class="sub-content">
+        <div class="detail">
+            Thông qua hoạt động trong Quốc tế Cộng sản, Nguyễn Ái Quốc đã kết nối phong trào thanh niên Việt Nam với phong trào cách mạng quốc tế.<br>
+            Người tranh thủ sự ủng hộ, học hỏi kinh nghiệm tổ chức và đấu tranh từ các phong trào tiến bộ trên thế giới.<br>
+            Nhờ đó, tổ chức thanh niên Việt Nam ngay từ đầu đã mang tính quốc tế và có định hướng cách mạng rõ ràng.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub1-7')">➤ Mục 1.7: Đặt nền móng cho tổ chức Đoàn Thanh niên Cộng sản</button>
+    <div id="sub1-7" class="sub-content">
+        <div class="detail">
+            Từ quá trình chuẩn bị về tư tưởng, tổ chức và cán bộ, Nguyễn Ái Quốc đã tạo ra những điều kiện cần thiết cho sự ra đời của Đoàn Thanh niên Cộng sản Đông Dương vào năm 1931.<br>
+            Đây là bước phát triển tất yếu của phong trào thanh niên cách mạng, khẳng định vai trò lịch sử của Người trong việc xây dựng tổ chức thanh niên dưới sự lãnh đạo của Đảng.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub1-8')">➤ Mục 1.8: Giá trị lịch sử và ý nghĩa hiện nay</button>
+    <div id="sub1-8" class="sub-content">
+        <div class="detail">
+            Vai trò của Nguyễn Ái Quốc không chỉ dừng lại ở việc sáng lập tiền thân của tổ chức Đoàn mà còn định hình lý tưởng, mục tiêu và phương pháp hoạt động cho thanh niên Việt Nam.<br>
+            Đến năm 2026, Đoàn Thanh niên Cộng sản Hồ Chí Minh vẫn kế thừa những tư tưởng đó trong công tác giáo dục lý tưởng, bồi dưỡng thế hệ trẻ và phát huy vai trò thanh niên trong xây dựng, bảo vệ Tổ quốc.<br>
+            Điều này khẳng định tầm nhìn chiến lược và giá trị bền vững trong tư tưởng của Người đối với công tác thanh niên.
+        </div>
+    </div>
+
+</div>
+
+
+    <!-- ===== MỤC 2 ===== -->
+<button class="main-btn" onclick="toggle('main2')">▶ Mục 2: Vai trò của Đảng Cộng sản Việt Nam đối với việc thành lập tổ chức Đoàn</button>
+<div id="main2" class="main-content">
+
+    <button class="sub-btn" onclick="toggle('sub2-1')">➤ Mục 2.1: Định hướng chính trị cho phong trào thanh niên</button>
+    <div id="sub2-1" class="sub-content">
+        <div class="detail">
+            Ngay từ khi thành lập năm 1930, Đảng Cộng sản Việt Nam đã xác định thanh niên là lực lượng xã hội to lớn, giữ vai trò quan trọng trong sự nghiệp đấu tranh giải phóng dân tộc.<br>
+            Đảng chủ trương tổ chức và lãnh đạo thanh niên đi theo con đường cách mạng vô sản, gắn mục tiêu độc lập dân tộc với chủ nghĩa xã hội.<br>
+            Đây là cơ sở chính trị quyết định cho sự ra đời của một tổ chức thanh niên thống nhất, hoạt động dưới sự lãnh đạo trực tiếp của Đảng.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub2-2')">➤ Mục 2.2: Quyết định thành lập tổ chức Đoàn Thanh niên Cộng sản</button>
+    <div id="sub2-2" class="sub-content">
+        <div class="detail">
+            Tháng 3/1931, Ban Chấp hành Trung ương Đảng đã chỉ đạo thành lập tổ chức Đoàn Thanh niên Cộng sản Đông Dương nhằm tập hợp lực lượng trẻ tham gia cách mạng.<br>
+            Sự kiện này đánh dấu bước ngoặt trong phong trào thanh niên Việt Nam, chuyển từ các nhóm hoạt động rời rạc sang một tổ chức có hệ thống, kỷ luật và mục tiêu rõ ràng.<br>
+            Ngày 26/3/1931 hiện được xác định là ngày thành lập Đoàn Thanh niên Cộng sản Hồ Chí Minh.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub2-3')">➤ Mục 2.3: Xây dựng Đoàn trở thành đội dự bị tin cậy của Đảng</button>
+    <div id="sub2-3" class="sub-content">
+        <div class="detail">
+            Đảng xác định Đoàn Thanh niên là “đội dự bị tin cậy”, là lực lượng kế cận bổ sung đảng viên trẻ cho Đảng.<br>
+            Thông qua hoạt động của Đoàn, nhiều đoàn viên ưu tú được bồi dưỡng lý tưởng cách mạng, rèn luyện trong thực tiễn và trưởng thành để đứng vào hàng ngũ của Đảng.<br>
+            Quan điểm này vẫn được giữ vững trong công tác xây dựng Đảng hiện nay.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub2-4')">➤ Mục 2.4: Lãnh đạo công tác giáo dục lý tưởng cách mạng</button>
+    <div id="sub2-4" class="sub-content">
+        <div class="detail">
+            Đảng luôn chú trọng giáo dục thanh niên về chủ nghĩa Mác – Lênin, tư tưởng Hồ Chí Minh, lòng yêu nước và trách nhiệm công dân.<br>
+            Tổ chức Đoàn trở thành môi trường quan trọng để đào tạo thế hệ trẻ có bản lĩnh chính trị, đạo đức và ý thức phục vụ nhân dân.<br>
+            Trong giai đoạn hiện nay, nội dung giáo dục còn gắn với khát vọng phát triển đất nước, chuyển đổi số, hội nhập quốc tế và bảo vệ chủ quyền quốc gia.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub2-5')">➤ Mục 2.5: Tổ chức và phát huy vai trò xung kích của thanh niên</button>
+    <div id="sub2-5" class="sub-content">
+        <div class="detail">
+            Dưới sự lãnh đạo của Đảng, Đoàn Thanh niên đã phát động nhiều phong trào hành động cách mạng qua các thời kỳ như thanh niên cứu quốc, thanh niên xung phong, tuổi trẻ sáng tạo và tình nguyện vì cộng đồng.<br>
+            Những phong trào này góp phần quan trọng vào thắng lợi của các cuộc kháng chiến trước đây cũng như công cuộc xây dựng và phát triển đất nước ngày nay.<br>
+            Thanh niên tiếp tục được xác định là lực lượng tiên phong trong khoa học – công nghệ, đổi mới sáng tạo và phát triển kinh tế xã hội.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub2-6')">➤ Mục 2.6: Hoàn thiện cơ chế lãnh đạo đối với tổ chức Đoàn</button>
+    <div id="sub2-6" class="sub-content">
+        <div class="detail">
+            Đảng thực hiện vai trò lãnh đạo thông qua việc ban hành nghị quyết, chỉ thị về công tác thanh niên; đồng thời phân công cấp ủy các cấp trực tiếp phụ trách hoạt động Đoàn.<br>
+            Nhà nước thể chế hóa các chủ trương này bằng luật pháp và chính sách thanh niên, tạo điều kiện để tổ chức Đoàn hoạt động hiệu quả.<br>
+            Cơ chế phối hợp giữa Đảng, Nhà nước và các tổ chức chính trị – xã hội giúp nâng cao vị thế của Đoàn trong hệ thống chính trị.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub2-7')">➤ Mục 2.7: Chăm lo đào tạo thế hệ trẻ trong thời kỳ mới</button>
+    <div id="sub2-7" class="sub-content">
+        <div class="detail">
+            Trong bối cảnh toàn cầu hóa và cách mạng công nghiệp mới, Đảng nhấn mạnh nhiệm vụ xây dựng lớp thanh niên “vừa hồng vừa chuyên”.<br>
+            Tổ chức Đoàn được giao trọng trách phát hiện, bồi dưỡng nhân tài trẻ, hỗ trợ lập nghiệp, khởi nghiệp và nâng cao trình độ khoa học – công nghệ.<br>
+            Đây là yếu tố then chốt để bảo đảm nguồn nhân lực chất lượng cao cho tương lai đất nước.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub2-8')">➤ Mục 2.8: Ý nghĩa lâu dài đối với sự phát triển của tổ chức Đoàn</button>
+    <div id="sub2-8" class="sub-content">
+        <div class="detail">
+            Vai trò lãnh đạo của Đảng là nhân tố quyết định bảo đảm cho tổ chức Đoàn luôn giữ vững phương hướng chính trị và mục tiêu hoạt động.<br>
+            Trải qua hơn 90 năm phát triển, mối quan hệ gắn bó giữa Đảng và Đoàn đã tạo nên sức mạnh đoàn kết, góp phần ổn định chính trị và phát triển xã hội.<br>
+            Tính đến ngày 31/1/2026, Đoàn Thanh niên Cộng sản Hồ Chí Minh tiếp tục là tổ chức chính trị – xã hội của thanh niên Việt Nam, hoạt động dưới sự lãnh đạo toàn diện của Đảng Cộng sản Việt Nam.
+        </div>
+    </div>
+
+</div>
+
+
+    <!-- ===== MỤC 3 ===== -->
+<button class="main-btn" onclick="toggle('main3')">▶ Mục 3: Tên gọi của tổ chức Đoàn qua các thời kỳ</button>
+<div id="main3" class="main-content">
+
+    <button class="sub-btn" onclick="toggle('sub3-1')">➤ Mục 3.1: Đoàn Thanh niên Cộng sản Đông Dương (1931 – 1936)</button>
+    <div id="sub3-1" class="sub-content">
+        <div class="detail">
+            Được thành lập ngày 26/3/1931 dưới sự lãnh đạo của Đảng Cộng sản Đông Dương.<br>
+            Đây là tổ chức thanh niên cộng sản đầu tiên tại Việt Nam, có nhiệm vụ tập hợp lực lượng thanh niên yêu nước, giác ngộ lý tưởng cách mạng và đấu tranh chống thực dân, phong kiến.<br>
+            Tổ chức hoạt động chủ yếu trong điều kiện bí mật do sự đàn áp của chính quyền thực dân.<br>
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub3-2')">➤ Mục 3.2: Đoàn Thanh niên Dân chủ Đông Dương (1936 – 1939)</button>
+    <div id="sub3-2" class="sub-content">
+        <div class="detail">
+            Ra đời trong bối cảnh phong trào Mặt trận Dân chủ phát triển mạnh.<br>
+            Nhiệm vụ trọng tâm là đấu tranh đòi các quyền tự do, dân sinh, dân chủ; cải thiện đời sống nhân dân.<br>
+            Hình thức hoạt động linh hoạt hơn, tận dụng các điều kiện hợp pháp và nửa hợp pháp để mở rộng ảnh hưởng trong thanh niên.<br>
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub3-3')">➤ Mục 3.3: Đoàn Thanh niên Phản đế Đông Dương (1939 – 1941)</button>
+    <div id="sub3-3" class="sub-content">
+        <div class="detail">
+            Khi Chiến tranh thế giới thứ hai bùng nổ, nhiệm vụ giải phóng dân tộc được đặt lên hàng đầu.<br>
+            Tổ chức hướng thanh niên vào mục tiêu chống chủ nghĩa đế quốc, chuẩn bị lực lượng cho cuộc đấu tranh giành độc lập.<br>
+            Hoạt động chủ yếu bí mật, chú trọng xây dựng cơ sở cách mạng.<br>
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub3-4')">➤ Mục 3.4: Đoàn Thanh niên Cứu quốc Việt Nam (1941 – 1956)</button>
+    <div id="sub3-4" class="sub-content">
+        <div class="detail">
+            Gắn liền với sự ra đời của Mặt trận Việt Minh.<br>
+            Tập hợp đông đảo thanh niên tham gia khởi nghĩa giành chính quyền trong Cách mạng Tháng Tám năm 1945.<br>
+            Sau đó, lực lượng đoàn viên tiếp tục đóng vai trò quan trọng trong hai cuộc kháng chiến chống thực dân Pháp và bảo vệ chính quyền cách mạng non trẻ.<br>
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub3-5')">➤ Mục 3.5: Đoàn Thanh niên Lao động Việt Nam (1956 – 1970)</button>
+    <div id="sub3-5" class="sub-content">
+        <div class="detail">
+            Phù hợp với nhiệm vụ xây dựng chủ nghĩa xã hội ở miền Bắc và đấu tranh thống nhất đất nước.<br>
+            Thanh niên được động viên tham gia lao động sản xuất, phát triển kinh tế, đồng thời sẵn sàng chiến đấu bảo vệ Tổ quốc.<br>
+            Phong trào “Thanh niên xung phong”, “Ba sẵn sàng” là những dấu ấn tiêu biểu của giai đoạn này.<br>
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub3-6')">➤ Mục 3.6: Đoàn Thanh niên Lao động Hồ Chí Minh (1970 – 1976)</button>
+    <div id="sub3-6" class="sub-content">
+        <div class="detail">
+            Được đổi tên nhằm thể hiện lòng kính trọng và ghi nhớ công lao to lớn của Chủ tịch Hồ Chí Minh đối với sự nghiệp cách mạng Việt Nam.<br>
+            Thanh niên cả nước tích cực tham gia cuộc kháng chiến chống Mỹ, góp phần vào thắng lợi năm 1975 và sự nghiệp thống nhất đất nước.<br>
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub3-7')">➤ Mục 3.7: Đoàn Thanh niên Cộng sản Hồ Chí Minh (1976 – nay)</button>
+    <div id="sub3-7" class="sub-content">
+        <div class="detail">
+            Sau khi đất nước thống nhất, tổ chức chính thức mang tên Đoàn Thanh niên Cộng sản Hồ Chí Minh và được sử dụng đến hiện nay.<br>
+            Là tổ chức chính trị – xã hội của thanh niên Việt Nam do Đảng Cộng sản Việt Nam lãnh đạo.<br>
+            Đoàn giữ vai trò nòng cốt trong các phong trào thanh niên, góp phần đào tạo thế hệ trẻ có lý tưởng, đạo đức, tri thức và trách nhiệm trong công cuộc xây dựng và bảo vệ Tổ quốc thời kỳ mới.<br>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+<script>
+    function toggle(id) {
+        const el = document.getElementById(id);
+        el.style.display = (el.style.display === "block") ? "none" : "block";
+    }
+</script>
+
+</body>
+</html>
